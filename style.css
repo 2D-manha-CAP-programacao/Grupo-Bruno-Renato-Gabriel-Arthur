@@ -1,11 +1,196 @@
-.container{
-    text-align:center;
+/* Resetar tudo para manter homogêneo */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    background-color: #151515; /* COR BACKGROUND */
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #222; /* MANTÉM CONTAINER COM COR DIFERENTE */
+    border-radius: 15px;
+    text-align: center;
+}
+
+header.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ddd
+}
+
+header.container p {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffc107; /* BORDA DOURADA */
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ESTILOS DOS BOTÕES */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffc107;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, color 0.3s ease;
+}
+
+/* QUANDO MOUSE PASSAR POR CIMA (DOS BOTÕES) */
+.button:hover {
+    background-color: #e0a800; /* DOURADO MAIS ESCURO */
+    color: #fff; /* MUDAR TEXTO PARA BRANCO*/
+    transform: scale(1.05);
+}
+
+.container_1 {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.container_1 h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    color: #ffc107; /* COR DOURADO "NOSSOS PROJETOS" */
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+}
+
 .card {
-    background-color: #166;
-    width: 180px;
-    height: 260px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #aaaa;
-  }
-  
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker card shadow */
+    background-color: #333; /* Dark card background */
+    color: #f0f0f0; /* Light text on card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    display: block;
+    filter: brightness(80%); /* Slightly dim the image */
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: #ffc107; /* Yellow-gold title */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #ddd;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow-gold button */
+    color: #333; /* Dark text on button */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: #e0a800; /* Darker yellow-gold on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.02);
+}
+
+footer.container {
+    background-color: #333; /* Dark footer */
+    color: #ffc107; /* Yellow-gold footer text */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer.container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+footer.container a {
+    color: #ffc107; /* Yellow-gold link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer.container a:hover {
+    color: #e0a800; /* Darker yellow-gold on hover */
+}
+
+footer.container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ddd;
+}
